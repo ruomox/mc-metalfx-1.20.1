@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mc-metalfx",
+	"version": "${version}",
+	"name": "mc-MetalFX",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Mox ZaZa"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC BY-NC-SA 4.0",
+	"icon": "assets/mc-metalfx/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xyz.wmskins.mcmetalfx.McMetalFX"
+		],
+		"fabric-datagen": [
+			"xyz.wmskins.mcmetalfx.McMetalFXDataGenerator"
+		],
+        "client": [
+            "xyz.wmskins.mcmetalfx.McMetalFXClient"
+        ]
+	},
+	"mixins": [
+		"mc-metalfx.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
